@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <meta http-equiv="cache-control" content="no-cache">
+  <link href="impressum.css" rel="stylesheet">
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .circle {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        animation: effect 2s linear infinite;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 6px solid rgba(255, 255, 255, 0.3);
+        border-top-color: #fff;
+    }
+
+    @keyframes effect {
+        0% {
+            transform: rotate(0deg);
+            color: red;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            color: green;
+        }
+
+    }
+</style>
+</head>
+<body>
+    <nav>   
+        <ul>
+          <li><a href="main.html">Bee-Game</a></li>
+          <li><a href="https://www.google.com">Explore</a></li>
+          <li><a href="#">Programming languages</a>
+              <ul>
+                <li><a href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language">HTML</a></li>
+                <br /><li><a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a></li>
+                <br /><li><a href="https://de.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+              </ul>
+          </li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+    </nav>
+    <div class="circle"></div>
+</body>

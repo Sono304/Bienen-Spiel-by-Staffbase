@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>The Bee-Game</title>
+  <meta http-equiv="cache-control" content="no-cache">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="main.js"></script>
+  <link href="main.css" rel="stylesheet">
+  <style>
+    button {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px double #cccccc;
+    color: #464646;
+    text-align: center;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    width: 150px;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    cursor: pointer;
+    margin: 3px;
+    }
+    button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.25s;
+    }
+    button:hover {
+    background-color: #c2f9e5;
+    }
+    button:hover span {
+    padding-right: 25px;
+    }
+    button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>   
+      <ul>
+        <li><a href="main.html">Bee-Game</a></li>
+        <li><a href="https://www.google.com">Explore</a></li>
+        <li><a href="#">Programming languages</a>
+            <ul>
+              <li><a href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language">HTML</a></li>
+              <br /><li><a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a></li>
+              <br /><li><a href="https://de.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+            </ul>
+        </li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+  </nav>
+<h1>Bee-Game</h1>
+<canvas id="leinwand" width="630" height="480"></canvas> 
+<div id="punktestand">Points: 0</div> 
+<div id="spielzeit">Gametime: 0 seconds left</div> 
+<div id="spielendeanzeige">Zeit abgelaufen</div>
+<div id="gameover">Wie traurig - verloren.</div>
+<div id="letzterwert">Last Score: <span id="value">0</span> Points</div>
+<div id="besterwert">Best Score: <span id="bestvalue">0</span> Points</div>
+<button onClick="window.location.reload();" >Neu Beginnen</button>
+</button>
+</body>
+</html>

@@ -1,0 +1,104 @@
+html{
+	height: 100%;
+}
+body {
+    margin: 1;
+    height: 100%;
+	color: rgb(215, 215, 215);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-style: oblique;
+    background-color: rgb(74, 72, 72);
+	background: radial-gradient(rgb(109, 109, 109), rgb(74, 72, 72));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+nav{
+	width: 100%;
+	height: 85px;
+	background-color: rgb(79, 200, 188);
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.11);
+}
+nav ul {
+	float: right;
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+}
+nav ul li a{
+	font-family: Arial;
+	color: #272727;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 24px;
+	display: block;
+	border-radius: 5px;
+}
+nav ul li a:hover{
+	background-color: #43c4b7;
+	box-shadow: 3px 3px 4px 0px #154a44;
+	transition: 0.3s;
+}
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: #338585;
+	padding: 4px;
+	border-radius: 0px 0px 12px 12px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav ul li ul li a{
+	color: white;
+	padding: 14px 15px;
+	border-radius: 10px;
+}
+nav ul li ul li a:hover{
+	background-color: #338585;
+	transition: 0.5s;
+}
+
+#leinwand {
+    background-color: rgb(151, 230, 71);
+    border-radius: 3%;
+}
+
+#spielbereich {
+	position: relative;
+	width: 620px;
+    height: 20px;
+}
+
+#gameover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	border: 4px solid red;
+	margin: 189px 5px;
+	background-color: hsla(0, 50%, 50%, 0.7);
+	width: 626px;
+	height: 474px;
+	border-radius: 3%;
+}
+
+#spielendeanzeige {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	border: 4px solid rgb(255, 0, 0);
+	margin: 189px 5px;
+	width: 626px;
+	height: 474px;
+	background-color: hsla(33, 100%, 30%, 0.8);
+    border-radius: 3%;
+}
+
+
+           
